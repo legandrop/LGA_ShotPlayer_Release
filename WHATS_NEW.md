@@ -1,6 +1,18 @@
 # What's new in LGA Shot Player
 
-## v1.002 (2026-11-03)
+## v1.003 (2026-11-09)
+
+- **New:** Al abrir el Shot Player sin un video ves tus proyectos y videos recientes con miniatura, y lo último que tenías abierto sin guardar: con Restore lo recuperás tal cual, aunque hayas cerrado la app.
+- **New:** Con `Q` o el ícono nuevo junto a Channels ves burn-ins sobre la imagen (clip, codec, timecode, fps, resolución, colorspace y más); vienen prendidos desde el primer uso, y con `Shift+Q` o la flechita elegís qué datos se muestran, cómo se reparten (Corners, Bottom line...) y dónde va cada uno, al lado o arriba de otro, y cada distribución recuerda lo que elegiste.
+- **Improved:** Los sliders de Exposure, Gamma y Sat van de un clic al lugar donde cliqueás y, si mantenés apretado, seguís arrastrando desde ahí, sin tener que cliquear varias veces.
+- **Improved:** Los burn-ins muestran el espacio de color solo cuando se sabe (lo trae el archivo o lo elegiste vos); si es un supuesto por el tipo de archivo, el combo de Input lo marca `(assumed)` y elegir uno cambia solo ese clip.
+- **Improved:** Si la conexión falla al buscar o bajar una actualización, el Shot Player espera y vuelve a probar solo hasta tres veces.
+- **Improved:** Los clips Sony X-OCN gastan menos CPU al reproducirse.
+- **Improved:** Los clips Sony X-OCN se decodifican en parte con la GPU: gastan cuatro veces menos CPU. (macOS only)
+- **Fixed:** Al subir la velocidad con L en un video con loop, la imagen ya no se clava en cada vuelta. (Windows only)
+- **Fixed:** El primer tooltip después de abrir el Shot Player ya no aparece encima del puntero tapando el botón: sale debajo, igual que los siguientes. (macOS only)
+
+## v1.002
 
 - **New:** Podés marcar los cortes de un EDL sobre la película con `File > Import EDL...`, soltando el `.edl` o con click derecho en el clip > `Import EDL Cuts...`: con las flechas Arriba y Abajo saltás de corte a corte, `Shift+U` loopea el plano en el que estás y arriba del visor ves qué plano es.
 - **New:** Si al importar una película hay un EDL suyo en la misma carpeta, el Shot Player lo encuentra y te ofrece marcar los cortes con un click.
@@ -45,7 +57,7 @@
 - **Fixed:** With several videos in the timeline, turning a track off or on during playback, or looping back to the start in either direction, no longer makes playback stutter while the video underneath catches up. (macOS only)
 - **Fixed:** Keyboard shortcuts such as Space and the arrow keys work again when two player windows are open.
 
-## v1.000 (2026-10-16)
+## v1.000
 
 - **New:** Shift+click clips in the timeline to select several, then drag them together with Ctrl+drag (Cmd+drag on Mac), or right-click to sequence them one after another or sort their tracks alphabetically.
 - **New:** Shift+Left and Shift+Right jump 10 frames back or forward.
@@ -54,7 +66,7 @@
 - **Improved:** The timeline range now always fits every clip: moving a clip past the end extends it, and moving it back shrinks it.
 - **Fixed:** The table in Relink Missing Media now shows its scrollbar.
 
-## v0.256 (2026-10-04)
+## v0.256
 
 - **Improved:** The player now checks for updates every few hours while it stays open, not only at startup. Remind me later waits one day instead of a week, and closing the update window won't ask again until you restart the player.
 
