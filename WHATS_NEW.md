@@ -1,6 +1,23 @@
 # What's new in LGA Shot Player
 
-## v1.003 (2026-11-09)
+## v1.004 (2026-11-12)
+
+- **New:** Clic derecho sobre un clip > `Relink…` para volver a buscar su archivo o apuntarlo a otro; si el clip está offline, dice `Relink Missing Media…`.
+- **New:** `Ctrl+N` abre otra ventana con la pantalla de inicio, `Ctrl+W` cierra el proyecto y deja la ventana en el inicio, y `Ctrl+Shift+W` cierra la ventana.
+- **New:** El menú de burn-ins (`Shift+Q`) suma `Margin`, para alejar los burn-ins de los bordes cuando el video ya trae los suyos.
+- **New:** Podés girar o espejar clips solo para verlos: clic derecho sobre un clip > `Rotate & Flip`, con 90°, 180°, 270°, `Flip Horizontal` y `Flip Vertical`; si tenés varios clips seleccionados, cambian todos juntos. Queda guardado en el proyecto y cada clip lo marca en el timeline.
+- **New:** La barra del visor suma tres iconos para girar la imagen 90° a la derecha con cada clic (`Alt`+clic vuelve a 0°) y espejarla de izquierda a derecha o de arriba a abajo, para todo lo que estás viendo.
+- **New:** Los botones Corners, Bottom line y demás del menú de burn-ins son presets: cada uno recuerda qué datos muestra y dónde van, y con `Reset` el que estás usando vuelve a como venía, sin tocar los otros.
+- **New:** El Shot Player se cierra apretando `Esc` dos veces: con el primero aparece un aviso, y si no apretás el segundo enseguida, no pasa nada. Si tenés abierto el menú de burn-ins, `Esc` cierra primero ese menú.
+- **Improved:** Cuando un proyecto no encuentra algún video, el aviso ahora es claro: muestra cada archivo con su estado, dónde estaba y dónde se encontró, y lo busca solo en la carpeta donde estaba. Podés buscar en otra carpeta o en una unidad entera, elegir cada archivo a mano con `Pick File…`, o abrir el proyecto sin relinkear: lo que falta queda offline.
+- **Improved:** La pantalla de inicio recuerda hasta cuatro proyectos sin guardar, no solo el último: si tenías varias ventanas abiertas, se guarda el de cada una, y cada tarjeta dice a qué hora se guardó. Si dos tienen los mismos videos, aunque estén en otro orden, queda uno solo, el más reciente. Para abrir uno, hacé clic en su tarjeta.
+- **Improved:** El menú de burn-ins (`Shift+Q`) se ve más ordenado: secciones más claras, opciones alineadas y botones que se iluminan al pasar el mouse; y si nunca los configuraste, arrancan chicos con el clip arriba y el timecode, fps, resolución y codec abajo.
+- **Improved:** `Home` durante la reproducción vuelve al comienzo y sigue reproduciendo, en vez de frenar.
+- **Fixed:** Deshacer o rehacer (`Ctrl+Z` / `Ctrl+Shift+Z`) ya no te lleva al principio del timeline: te quedás en el cuadro donde estabas.
+- **Fixed:** Con los burn-ins fijos en pantalla (Zoom: Keep), el texto ya no se agranda cuando hacés zoom sobre la imagen.
+- **Fixed:** Shot Player reproduce los X-OCN de la Sony VENICE 2, que antes no se veían, con el mismo encuadre, exposición y color que DaVinci Resolve.
+
+## v1.003
 
 - **New:** Al abrir el Shot Player sin un video ves tus proyectos y videos recientes con miniatura, y lo último que tenías abierto sin guardar: con Restore lo recuperás tal cual, aunque hayas cerrado la app.
 - **New:** Con `Q` o el ícono nuevo junto a Channels ves burn-ins sobre la imagen (clip, codec, timecode, fps, resolución, colorspace y más); vienen prendidos desde el primer uso, y con `Shift+Q` o la flechita elegís qué datos se muestran, cómo se reparten (Corners, Bottom line...) y dónde va cada uno, al lado o arriba de otro, y cada distribución recuerda lo que elegiste.
