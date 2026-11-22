@@ -2,7 +2,7 @@
 
 ## v1.01 (2026-11-22)
 
-- **New:** La regla del timeline muestra el número de cuadro de las marcas In y Out y, en la esquina, cuántos cuadros hay entre ellas. Con doble clic sobre el número escribís el cuadro exacto.
+- **New:** La regla del timeline muestra el número de cuadro de las marcas In y Out, y en la esquina la duración: en amarillo la del tramo entre las marcas, y en gris la del clip entero cuando no hay marcas. Con doble clic sobre el número de una marca escribís el cuadro exacto, y con un clic en la duración la pasás de cuadros a tiempo (`1:23:15`); el player recuerda tu elección.
 - **New:** En pantalla completa, la barra de avance muestra en ámbar el tramo entre las marcas In y Out.
 - **New:** Podés arrastrar al Shot Player un PNG, JPG, EXR, TIFF o DPX suelto aunque no sea parte de una secuencia: entra en su propio track y, si ya hay un video, dura todo el timeline. Así podés poner varias imágenes una arriba de la otra o encima de un video. El doble clic desde el Explorer sigue abriendo el PNG suelto con la app que elegiste.
 - **New:** Arrastrando el borde izquierdo o derecho de un clip lo recortás; una imagen fija se estira o se acorta al largo que quieras.
