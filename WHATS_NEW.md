@@ -1,6 +1,26 @@
 # What's new in LGA Shot Player
 
-## v1.004 (2026-11-12)
+## v1.01 (2026-11-22)
+
+- **New:** La regla del timeline muestra el número de cuadro de las marcas In y Out y, en la esquina, cuántos cuadros hay entre ellas. Con doble clic sobre el número escribís el cuadro exacto.
+- **New:** En pantalla completa, la barra de avance muestra en ámbar el tramo entre las marcas In y Out.
+- **New:** Podés arrastrar al Shot Player un PNG, JPG, EXR, TIFF o DPX suelto aunque no sea parte de una secuencia: entra en su propio track y, si ya hay un video, dura todo el timeline. Así podés poner varias imágenes una arriba de la otra o encima de un video. El doble clic desde el Explorer sigue abriendo el PNG suelto con la app que elegiste.
+- **New:** Arrastrando el borde izquierdo o derecho de un clip lo recortás; una imagen fija se estira o se acorta al largo que quieras.
+- **New:** Si soltás un plate desde la carpeta `_input` de un shot, también te ofrece `Import Shot Review` para sumar los demás plates y el EditRef.
+- **Improved:** El timecode y los números de cuadro de los burn-ins ya no bailan al reproducir: cada número ocupa siempre el mismo ancho.
+- **Improved:** Con el cabezal parado sobre la marca In, la `I` la borra; sobre la Out, la `O`. Lo mismo al hacer clic en su bandera.
+- **Improved:** Las secuencias TIFF de 16 bits se reproducen en tiempo real, también hacia atrás y al cambiar de dirección: antes iban a la mitad de velocidad. (Windows only)
+- **Improved:** `Exposure` y `Gamma` también funcionan cuando mirás solo el canal alfa, igual que en los canales R, G y B.
+- **Improved:** Los archivos asociados al Shot Player muestran siempre los iconos de documento de fábrica, y `Document icons` ya no aparece en `Preferences > File Association`: elegir otro estilo modificaba la app y rompía su firma. (macOS only)
+- **Improved:** El DMG viene firmado y verificado por Apple: la app se abre sin pasar por la Terminal. La primera vez que abras esta versión, macOS puede volver a pedirte los permisos que ya le habías dado (por ejemplo, acceso a carpetas o discos). (macOS only)
+- **Fixed:** El desplegable de espacio de color del clip vuelve a mostrar el nombre del espacio. Cuando el archivo no lo dice y el player lo supone, al lado aparece una marca `assumed` en ámbar, y si elegís otro espacio, la lista sigue marcando el que había supuesto.
+- **Fixed:** Abrir un resultado desde NFX Ai junto con lo que se le envió ya no cierra el Shot Player sin abrirlo: carga los dos en tracks, comparados con la cortina.
+- **Fixed:** El Shot Player ya no termina con un error al cerrarlo.
+- **Fixed:** Al abrir un archivo con doble clic, el visor queda ajustado a la ventana como con la `F`: si después la agrandás o la achicás, la imagen se sigue ajustando en vez de quedar clavada al 100 %.
+- **Fixed:** El look del botón `AMF` (`Shift+L`) se aplica aunque importes solo un plate o solo un comp de un shot, y también en plates cuyo nombre no dice «Plate».
+- **Fixed:** Los snapshots de la galería ya no se guardan dentro de la app, donde una actualización podía borrarlos: ahora van a tu carpeta de datos de usuario y los que ya tenías se mueven ahí solos la primera vez que abrís esta versión. (macOS only)
+
+## v1.004
 
 - **New:** Clic derecho sobre un clip > `Relink…` para volver a buscar su archivo o apuntarlo a otro; si el clip está offline, dice `Relink Missing Media…`.
 - **New:** `Ctrl+N` abre otra ventana con la pantalla de inicio, `Ctrl+W` cierra el proyecto y deja la ventana en el inicio, y `Ctrl+Shift+W` cierra la ventana.
