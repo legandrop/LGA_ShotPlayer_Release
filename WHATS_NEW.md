@@ -1,6 +1,16 @@
 # What's new in LGA Shot Player
 
-## v1.01 (2026-11-22)
+## v1.02 (2026-11-27)
+
+- **New:** Máscara de aspecto en el visor: el botón nuevo de la barra la pone al 50 %, al 100 % o la apaga; con `M` pasás por tus aspectos favoritos y con `Shift+M` abrís el menú, donde marcás favoritos con la estrella, los ordenás arrastrándolos y agregás aspectos propios como `2.2:1` o `4096x1716`.
+- **Improved:** En el timeline, cada cuadro ocupa su lugar: un clip de un cuadro o una imagen fija se ve como un bloque con su nombre, y dos clips pegados ya no dejan un hueco entre ellos.
+- **Improved:** En Windows, al reproducir video comprimido, el visor reutiliza los cuadros recientes cuando dos pedidos llegan fuera de orden.
+- **Improved:** Los sliders de `Exposure`, `Gamma` y `Sat` son mucho más finos cerca del centro: un movimiento chico ajusta un poco, y el recorrido largo hacia los extremos sigue llegando a los mismos valores de antes.
+- **Improved:** Los avisos que aparecen sobre la imagen (al cargar un archivo, al guardar, al cambiar la velocidad o el canal) salen en el medio del visor, donde estás mirando, en vez de abajo.
+- **Fixed:** Podés llegar hasta el último cuadro de los videos de cadencia variable aunque haya saltos en los tiempos de captura.
+- **Fixed:** Al volver a mostrar el mismo cuadro de un video, el visor conserva la imagen correcta incluso al final del clip.
+
+## v1.01
 
 - **New:** La regla del timeline muestra el número de cuadro de las marcas In y Out, y en la esquina la duración: en amarillo la del tramo entre las marcas, y en gris la del clip entero cuando no hay marcas. Con doble clic sobre el número de una marca escribís el cuadro exacto, y con un clic en la duración la pasás de cuadros a tiempo (`1:23:15`); el player recuerda tu elección.
 - **New:** En pantalla completa, la barra de avance muestra en ámbar el tramo entre las marcas In y Out.
